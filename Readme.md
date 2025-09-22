@@ -13,9 +13,16 @@ Thanks to cloud-init configuration, you will be able to:
 * create a user account with SSH keys.
 
 ## Prerequisites
+
+### Required tools
 To perform the exercises published here, you will need access to a Proxmox server and have the following tools installed:
 * ansible
 * ssh client
+
+### Required skills
+Knowledge required to learn the material:
+* basic knowledge of Linux system
+* ability to work with SSH keys
 
 ## Repository structure
 ### Exercises
