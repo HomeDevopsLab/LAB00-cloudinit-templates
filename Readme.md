@@ -21,6 +21,8 @@ To perform the exercises published here, you will need access to a Proxmox serve
 ### Exercises
 This directory contains a series of exercises that will allow you to acquire the knowledge needed to deploy virtual machine images on a Proxmox server.
 
+* [Ansible basics](excercises/01-ansible-basics/Readme.md)
+
 ### Solution
 Complete code that can be used to build a custom virtual machine template
 
