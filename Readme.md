@@ -16,3 +16,13 @@ Thanks to cloud-init configuration, you will be able to:
 To perform the exercises published here, you will need access to a Proxmox server and have the following tools installed:
 * ansible
 * ssh client
+
+## Repository structure
+### Exercises
+This directory contains a series of exercises that will allow you to acquire the knowledge needed to deploy virtual machine images on a Proxmox server.
+
+### Solution
+Complete code that can be used to build a custom virtual machine template
+
+## Links
+* Cloud init images.
