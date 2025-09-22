@@ -26,11 +26,12 @@ To perform the exercises published here, you will need access to a Proxmox serve
 > * ability to work with SSH keys
 
 ### Skills acquired
-After completing this course, you will learn basic ansible concepts such as:
-* playbooks
-* ansible modules
-* working with inventory
-* variables in ansible
+> [!TIP]
+> After completing this course, you will learn basic ansible concepts such as:
+> * ansible playbooks
+> * ansible modules
+> * working with static inventory
+> * working with variables
 
 Additionally, you will learn YAML syntax.
 
