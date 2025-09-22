@@ -1,49 +1,61 @@
 ![Proxmox](https://img.shields.io/badge/proxmox-proxmox?style=for-the-badge&logo=proxmox&logoColor=%23E57000&labelColor=%232b2a33&color=%232b2a33)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![Ansible](https://img.shields.io/badge/ansible-%231A1918.svg?style=for-the-badge&logo=ansible&logoColor=white)
+![Markdown](https://img.shields.io/badge/markdown-%23000000.svg?style=for-the-badge&logo=markdown&logoColor=white)
 
 # Cloud-init Virtual Machine Templates
+
 All the most popular Linux distributions provide ready-made virtual machine templates. This is a solution that allows you to save a lot of time that would have to be spent on manual system installation.
 
 Learn in a few steps how to prepare your VM that you will customize to your own needs.
 
 Thanks to cloud-init configuration, you will be able to:
-* install necessary software in the template such as network tools or virtualization agent
-* configure system settings (e.g., time zone)
-* create a user account with SSH keys.
+
+- install necessary software in the template such as network tools or virtualization agent
+- configure system settings (e.g., time zone)
+- create a user account with SSH keys.
 
 ## Prerequisites
 
 ### Required tools
+
 To perform the exercises published here, you will need access to a Proxmox server and have the following tools installed:
-* ansible
-* ssh client
+
+- ansible
+- ssh client
 
 ### Required skills
+
 > [!IMPORTANT]
 > Knowledge required to learn the material:
-> * basic knowledge of Linux system
-> * ability to work with SSH keys
+>
+> - basic knowledge of Linux system
+> - ability to work with SSH keys
 
 ### Skills acquired
+
 > [!TIP]
 > After completing this course, you will learn basic ansible concepts such as:
-> * ansible playbooks
-> * ansible modules
-> * working with static inventory
-> * working with variables
+>
+> - ansible playbooks
+> - ansible modules
+> - working with static inventory
+> - working with variables
 
 Additionally, you will learn YAML syntax.
 
-
 ## Repository structure
+
 ### Exercises
+
 This directory contains a series of exercises that will allow you to acquire the knowledge needed to deploy virtual machine images on a Proxmox server.
 
-* [Ansible basics](excercises/01-ansible-basics/Readme.md)
+- [Ansible basics](excercises/01-ansible-basics/Readme.md)
 
 ### Solution
+
 Complete code that can be used to build a custom virtual machine template
 
 ## Links
-* Cloud init images.
+
+- Cloud init images.
