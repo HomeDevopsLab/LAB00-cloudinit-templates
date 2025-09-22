@@ -23,6 +23,15 @@ To perform the exercises published here, you will need access to a Proxmox serve
 Knowledge required to learn the material:
 * basic knowledge of Linux system
 * ability to work with SSH keys
+### Skills acquired
+After completing this course, you will learn basic ansible concepts such as:
+* playbooks
+* ansible modules
+* working with inventory
+* variables in ansible
+
+Additionally, you will learn YAML syntax.
+
 
 ## Repository structure
 ### Exercises
