@@ -22,8 +22,42 @@ The system from which playbooks are executed.
   <img src="/assets/img/ansible-diagram.png" />
 </picture>
 
-<!-- * managed node
-* inventory -->
+### Managed Node
+
+A system managed by Ansible (server, VM) on which configuration is automatically deployed from the control node.
+
+### Inventory
+Inventory can be static or dynamic. Static inventory is a file in `ini` or `yaml` format. It contains information that allows Ansible to locate managed nodes in order to execute commands and configurations on them.
+
+INI example:
+```ini
+mail.example.com
+
+[webservers]
+foo.example.com
+bar.example.com
+
+[dbservers]
+one.example.com
+two.example.com
+three.example.com
+```
+
+YAML example:
+```yaml
+ungrouped:
+  hosts:
+    mail.example.com:
+webservers:
+  hosts:
+    foo.example.com:
+    bar.example.com:
+dbservers:
+  hosts:
+    one.example.com:
+    two.example.com:
+    three.example.com:
+```
 
 ## Ansible Installation
 
