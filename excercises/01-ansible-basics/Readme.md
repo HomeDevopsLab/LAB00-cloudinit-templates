@@ -41,6 +41,13 @@ bar.example.com
 one.example.com
 two.example.com
 three.example.com
+
+[foo_hosts]
+foo  ansible_host=10.0.0.1          another_var=another_value
+
+[foo_hosts:vars]
+ansible_connection=ssh
+ansible_user=root
 ```
 
 YAML example:
@@ -57,6 +64,14 @@ dbservers:
     one.example.com:
     two.example.com:
     three.example.com:
+foo_hosts:
+  hosts:
+    foo:
+      ansible_host: 10.0.0.1
+      another_var: another_value
+  vars:
+    ansible_connection: ssh
+    ansible_user: root
 ```
 
 ## Ansible Installation
