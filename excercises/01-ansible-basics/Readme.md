@@ -31,39 +31,16 @@ Inventory can be static or dynamic. Static inventory is a file in `ini` or `yaml
 
 INI example:
 ```ini
-mail.example.com
-
-[webservers]
-foo.example.com
-bar.example.com
-
-[dbservers]
-one.example.com
-two.example.com
-three.example.com
-
 [foo_hosts]
 foo  ansible_host=10.0.0.1          another_var=another_value
 
 [foo_hosts:vars]
 ansible_connection=ssh
-ansible_user=root
+ansible_user=ansible
 ```
 
 YAML example:
 ```yaml
-ungrouped:
-  hosts:
-    mail.example.com:
-webservers:
-  hosts:
-    foo.example.com:
-    bar.example.com:
-dbservers:
-  hosts:
-    one.example.com:
-    two.example.com:
-    three.example.com:
 foo_hosts:
   hosts:
     foo:
@@ -71,8 +48,11 @@ foo_hosts:
       another_var: another_value
   vars:
     ansible_connection: ssh
-    ansible_user: root
+    ansible_user: ansible
 ```
+
+> ![TIP]
+> `ansible_host` and `ansible_user` are connection variables. They are available by default. `ansible_host` can be used to provide ip address of the target, when ho dns name is configured yet.
 
 ## Ansible Installation
 
