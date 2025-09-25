@@ -52,7 +52,7 @@ foo_hosts:
 ```
 
 > [!TIP]
-> `ansible_host` and `ansible_user` are connection variables. They are available by default. `ansible_host` can be used to provide ip address of the target, when ho dns name is configured yet.
+> `ansible_host` and `ansible_user` are connection variables. They are available by default. `ansible_host` can be used to provide IP address of the target, when no DNS name is configured yet.
 
 ## Ansible Installation
 
