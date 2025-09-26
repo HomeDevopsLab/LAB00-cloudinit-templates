@@ -8,6 +8,9 @@ Ansible is a great IaC tool designed to automate software installation and confi
 
 One of the main advantages of Ansible is the low requirements for managed systems. There is no need to install Ansible on them. It is sufficient to have Python installed and a user account created that can be accessed via SSH.
 
+> [!TIP]
+> Ansible is able to authenticate with managed node with interactive password prompt and ssh keys.
+
 ## Ansible concepts
 
 ### Playbooks
@@ -56,10 +59,17 @@ foo_hosts:
 
 ## Ansible Installation
 
-<!--
-* Wymagania control node
-* Wymagania managed node
--->
+The only environment where ansible needs to be installed is control node.
+
+### Control node
+
+```bash
+sudo apt install ansible
+```
+
+### Managed Node
+
+There's no need to install ansible on managed node, only python package is required.
 
 ## Configuration Files
 
