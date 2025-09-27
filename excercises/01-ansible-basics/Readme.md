@@ -71,7 +71,22 @@ sudo apt install ansible
 
 There's no need to install ansible on managed node, only python package is required.
 
-## Configuration Files
+## Configuration File
+
+Ansible's configuration file is `ansible.cfg`. Changes can be made and used in a configuration file which will be searched for in the following order:
+* `ANSIBLE_CONFIG` (environment variable if set)
+* `ansible.cfg` (in the current directory)
+* `~/.ansible.cfg` (in the home directory)
+* `/etc/ansible/ansible.cfg`
+
+```ini
+[defaults]
+host_key_checking = False
+enable_plugins = host_list
+force_color = True
+```
+
+In this file, you can have many configuration options that define how Ansible should behave or what resources it can use. In the example above, we set Ansible not to verify host keys and to produce colored output. We also want to use only the host_list inventory plugin.
 
 ## Running Commands Using Ansible
 
